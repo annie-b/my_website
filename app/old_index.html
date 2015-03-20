@@ -17,6 +17,9 @@
     <!-- endbuild -->
   </head>
   <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -41,9 +44,8 @@
       </div>
     </nav>
 
-    <div id="container">
-      <div class="jumbotron transparent">
-        <div class="header">
+    <div class="jumbotron transparent">
+      <div class="header">
           <div id="avatar">
             <img src="images/annie_logo4.png" height="150">
           </div>
@@ -51,23 +53,25 @@
             <h1>Annie Bourgeois</h1>
             <h2>Full Stack Web Developer</h2>
           </div>
-        </div>
       </div>
 
-      <div id="intro">
-        <div class="row">
-          <div class="col-md-12">
-            <p>My name is Annie and I'm a full-stack web developer. I have extensive background in Linux System Administration. A few years ago, I taught myself PHP and have worked in the LAMP stack for the last several years. For the past several months, I've been attending a web development immersive bootcamp at General Assembly in Boston learning Ruby on Rails and JavaScript.</p>
-          </div>
 
+    </div>
+
+    <div id="container" class="transparent">
+      <div class="row">
+      <div class="col-md-12" id="intro">
+        <p>My name is Annie and I'm a full-stack web developer. I have extensive background in Linux System Administration. A few years ago, I taught myself PHP and have worked in the LAMP stack for the last several years. For the past several months, I've been attending a web development immersive bootcamp at General Assembly in Boston learning Ruby on Rails and JavaScript.</p>
+      </div>
+
+      <article id="mytech">
           <div class="col-md-4"><h4>Front-End</h4>
-            <ul>
-              <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>jQuery</li>
-              <li>Backbone</li>
-              <li>Angular</li>
-            </ul>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>Backbone</li>
+            <li>Angular</li>
+          </ul>
           </div>
 
           <div class="col-md-4"><h4><u>Back-End</u></h4>
@@ -87,19 +91,53 @@
             <li>Content Management Systems (Drupal/Wikis)</li>
           </ul>
           </div>
-
-
-
-
-
-
-
         </div>
-      </div>
+      <article>
     </div>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<!--
+        <div class="row">
+      <div class="col-md-6">Project 1</div>
+      <div class="col-md-6">Project 2</div>
+    </div> -->
+      <!-- <button id="lang" class="myButton">Languages</button> -->
+      <!-- <button id="tech" class="myButton">Technologies</button> -->
+      <!-- <button id="proj" class="myButton">Operating Systems</button> -->
+
+<!--       <div class="row">
+        <div class="col-md-4">
+          <ul>
+            <li><h4>Technologies</h4></li>
+            <li>HTML/CSS</li>
+            <li>Git, SCCS, RCS</li>
+            <li>MySql, PostgreSQL</li>
+            <li>RSpec, Jasmine</li>
+            <li>Drupal, TWiki</li>
+            <li>Apache</li>
+            <li>DNS</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <ul>
+            <li><h4>Languages</h4></li>
+            <li>JavaScript (jQuery, AJAX)</li>
+            <li>Ruby (Rails)</li>
+            <li>PHP</li>
+            <li>Perl</li>
+            <li>Bash</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <ul>
+            <li><h4>Operating Systems</h4></li>
+            <li>Mac OSX</li>
+            <li>RedHat Linux</li>
+            <li>Solaris 8</li>
+          </ul>
+        </div>
+
+      </div> -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
