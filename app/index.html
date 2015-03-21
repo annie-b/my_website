@@ -1,142 +1,103 @@
-<!doctype html>
-<html class="no-js">
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Annie Bourgeois</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <!-- <meta name="viewport" content="width=device-width"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+
   <body>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <div class="navbar-form navbar-right">
+          <form class="navbar-form navbar-right">
             <div class="form-group">
-              <a href="https://github.com/annie-b" style="text-decoration:none;" target="_blank"><img src="images/GitHub-Mark-Light-32px.png" width="28" height="30" alt="View Annie B's GitHub profile" ></a>
+              <input type="text" placeholder="Email" class="form-control">
             </div>
             <div class="form-group">
-              <a href="http://www.linkedin.com/in/anniebourgeois" style="text-decoration:none;" target="_blank"><img src="images/linked_in.png" width="32" height="32" alt="View Anne Bourgeois's LinkedIn profile" </a>
+              <input type="password" placeholder="Password" class="form-control">
             </div>
-            <div class="form-group">
-              <a href="https://twitter.com/annie_runs" style="text-decoration:none;" target="_blank"><img src="images/TwitterIcon.png" width="32" height="32" alt="View Anne Bourgeois's Twitter page"></a>
-            </div>
-            <div class="form-group">
-              <a href="mailto:hello@annie-bourgeois.com?subject=Website"><img src="images/noun_99714_cc2.png" width="35" height="35" alt="Send me an email"></a>
-            </div>
-          </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
-    <div class="hero-unit">
-      <div class="container" id="myHeader">
-          <div id="avatar">
-            <img src="images/annie_logo4.png" height="150">
-          </div>
-          <div id="myname">
-            <h1>Annie Bourgeois</h1>
-            <h2>Full Stack Web Developer</h2>
-          </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
-    <div id="intro">
+
+    <div class="container">
+      <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-12">
-          <p id="pitch">My name is Annie and I'm a full-stack web developer. I have extensive background in Linux System Administration. A few years ago, I taught myself PHP and have worked in the LAMP stack for the last several years. For the past several months, I've been attending a web development immersive bootcamp at General Assembly in Boston learning Ruby on Rails and JavaScript.</p>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-
-        <div class="col-md-4"><h4>Front-End</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>HTML/CSS</li>
-            <li>jQuery</li>
-            <li>Backbone</li>
-            <li>Angular</li>
-          </ul>
-        </div>
-
-        <div class="col-md-4"><h4>Back-End</h4>
-        <ul>
-          <li>Ruby</li>
-          <li>Rails</li>
-          <li>PHP</li>
-          <li>Angular</li>
-        </ul>
-        </div>
-
-        <div class="col-md-4"><h4>Technologies</h4>
-        <ul>
-          <li>DNS</li>
-          <li>Apache</li>
-          <li>Databases</li>
-          <li>Content Management Systems (Drupal/Wikis)</li>
-        </ul>
-        </div>
-
-        <div class="col-md-12">
-          <p>Projects I've Worked On: (Links coming soon!)</p>
-        </div>
-        <div class="col-md-6">
-          <ul>
-            <li>Bug Tracking System (Perl/CGI)</li>
-            <li>Vendor Course Enrollment(PHP)</li>
-            <li>Various Content Management Sites (Drupal & TWiki)</li>
-            <li>Runner Race Registration (Ruby on Rails)</li>
-            <li>Project Management System (Rails API & JavaScript)</li>
-          </ul>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
-    </div>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+      <hr>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer>
+    </div> <!-- /container -->
 
-        <!-- build:js(.) scripts/plugins.js -->
-        <script src="bower_components/bootstrap/js/affix.js"></script>
-        <script src="bower_components/bootstrap/js/alert.js"></script>
-        <script src="bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/bootstrap/js/modal.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
-        <script src="bower_components/bootstrap/js/button.js"></script>
-        <script src="bower_components/bootstrap/js/popover.js"></script>
-        <script src="bower_components/bootstrap/js/carousel.js"></script>
-        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/bootstrap/js/collapse.js"></script>
-        <script src="bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
