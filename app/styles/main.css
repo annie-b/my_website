@@ -132,7 +132,7 @@ h4.tagline {
   }
 
   #avatar img {
-    height: 110px;
+    height: 120px;
   }
 
   #my-header h1 {
@@ -141,7 +141,7 @@ h4.tagline {
   }
 
   #my-header h2 {
-    font-size: 1.75em;
+    font-size: 1.9em;
   }
 
   .container {
@@ -191,13 +191,10 @@ h4.tagline {
 
   #my-header h1 {
     font-size: 1.65em;
-    /*font-weight: bold;*/
   }
 
-
-
   #my-header h2 {
-    font-size: .95em;
+    font-size: 1.15em;
   }
 
   .marketing {
