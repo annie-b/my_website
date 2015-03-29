@@ -5,22 +5,20 @@
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  max-width: 100%;
   background-image: url(../images/background.jpg);
-  background-size: 1440px 800px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-repeat:repeat;
   display: compact;
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-family: courier;
-  width: 960px;
+  width: 100%;
   margin: auto;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
@@ -28,12 +26,34 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
+#avatar img {
+  height: 150px;
+}
+
 .header {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* Make the masthead heading the same height as the navigation */
+#my-header {
+  background-color: #FA9A0A;
+  height: auto;
+  padding: 90px;
+  text-align: center;
+}
+
+#my-header h1 {
+  font-size: 4em;
+}
+
+h4.tagline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.first-letter img {
+  height: 40px;
+}
+
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -41,7 +61,6 @@ body {
   padding-bottom: 19px;
 }
 
-/* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
@@ -52,24 +71,15 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  background-color: #FA9A0A;
-}
-
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
-/* Supporting marketing content */
 .marketing {
   margin: 40px 0;
   background: rgba(255,255,255,.9);
   font-family: verdana;
-
 }
 
 .marketing p + h4 {
@@ -79,16 +89,65 @@ body {
 #pitch {
   text-align: justify;
   font-size: 1.1em;
-
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+#social {
+  text-align: center;
+  background: rgba(255,255,255,.5);
+  padding: 10px;
+}
+
+@media (max-width: 1400px) {
+
+  body {
+    width: 100%;
+  }
+
+  #my-header h1 {
+    font-size: 3em;
+  }
+
+  #avatar img {
+    height: 125px;
+  }
+
+  .marketing {
+    margin: 10px 0;
+    background: rgba(255,255,255,.9);
+    font-family: verdana;
+  }
+
+  #social {
+    margin-top: 0px;
+    text-align: center;
+    background: rgba(255,255,255,.5);
+    padding: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  body {
+    width: 100%;
+  }
+
+  #avatar img {
+    height: 110px;
+  }
+
+  #my-header h1 {
+    font-size: 2.75em;
+    /*font-weight: bold;*/
+  }
+
+  #my-header h2 {
+    font-size: 1.75em;
+  }
+
   .container {
     max-width: 730px;
   }
 
-  /* Remove the padding we set earlier */
   .header,
   .marketing,
   .footer {
@@ -96,13 +155,70 @@ body {
     padding-right: 0;
   }
 
-  /* Space out the masthead */
   .header {
     margin-bottom: 30px;
   }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
+
+  #social {
+    text-align: center;
+    background: rgba(255,255,255,.5);
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+ body {
+      position: relative;
+      width: 100%;
+  }
+
+  #avatar img {
+    height: 75px;
+  }
+
+  #my-header {
+    background-color: #FA9A0A;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+  }
+
+  #my-header h1 {
+    font-size: 1.65em;
+    /*font-weight: bold;*/
+  }
+
+
+
+  #my-header h2 {
+    font-size: .95em;
+  }
+
+  .marketing {
+    margin: 5px 0;
+    background: rgba(255,255,255,.9);
+    font-family: verdana;
+    font-size: .9em;
+  }
+
+  .jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #FA9A0A;
+    font-size: 2em;
+    width: 100%;
+  }
+
+  #social {
+    text-align: center;
+    background: rgba(255,255,255,.5);
+    padding: 10px;
+  }
+
 }
